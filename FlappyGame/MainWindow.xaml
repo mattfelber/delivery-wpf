@@ -1,0 +1,130 @@
+﻿<Window x:Class="FlappyGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyGame"
+        mc:Ignorable="d"
+        Title="Delivery Loco"
+        Height="490"
+        Width="525"
+        FocusManager.FocusedElement="{Binding ElementName=MyCanvas}"
+        KeyDown="KeyIsDown"
+        KeyUp="KeyIsUp">
+
+    <Canvas Name="MyCanvas"
+            Focusable="True"
+            Background="LightBlue">
+        <!-- STATIC BACKGROUND -->
+        <Image Source="/Imgs/cityBackground.png"
+           Width="525"
+           Height="490"
+           Canvas.Left="0"
+           Canvas.Top="0"
+           Stretch="Fill"
+           Opacity="0.55"/>
+        
+
+        <!-- CLOUDS -->
+
+        <Image Height="145"
+               Width="200"
+               Source="Imgs/clouds.png"
+               Canvas.Left="78"
+               Canvas.Top="108"
+               Tag="cloud" />
+
+        <Image Height="145"
+               Width="200"
+               Source="Imgs/clouds.png"
+               Canvas.Left="317"
+               Canvas.Top="108"
+               Tag="cloud" />
+
+
+        <!-- OBSTACLE 1 -->
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarBottom.png"
+               Canvas.Left="15"
+               Canvas.Top="262"
+               Tag="obs1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarTop.png"
+               Canvas.Left="15"
+               Canvas.Top="-272"
+               Tag="obs1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+
+        <!-- OBSTACLE 2 -->
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarBottom.png"
+               Canvas.Left="450"
+               Canvas.Top="237"
+               Tag="obs2" />
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarTop.png"
+               Canvas.Left="450"
+               Canvas.Top="-297"
+               Tag="obs2" />
+
+
+        <!-- OBSTACLE 3 -->
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarBottom.png"
+               Canvas.Left="230"
+               Canvas.Top="329"
+               Tag="obs3" />
+
+        <Image Height="390"
+               Width="66"
+               Source="Imgs/radarTop.png"
+               Canvas.Left="232"
+               Canvas.Top="-205"
+               Tag="obs3" />
+
+
+        <!-- PLAYER -->
+
+        <Image Name="flappyBird"
+               Height="91"
+               Width="90"
+               Source="Imgs/flappyboy.png"
+               Canvas.Left="37"
+               Canvas.Top="132"
+               Stretch="Fill" />
+
+
+        <!-- SCORE -->
+
+        <Border Canvas.Left="10"
+        Canvas.Top="10"
+        Background="#CC111111"
+        BorderBrush="#FFD21A"
+        BorderThickness="2"
+        CornerRadius="4"
+        Padding="6,2"
+        Panel.ZIndex="10">
+
+            <Label Name="txtScore"
+           FontSize="22"
+           FontWeight="ExtraBold"
+           FontFamily="Consolas"
+           Foreground="White"
+           Padding="0"
+           Content="SCORE: 0" />
+
+        </Border>
+
+    </Canvas>
+
+</Window>
