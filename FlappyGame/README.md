@@ -4,9 +4,9 @@ A small Flappy Bird-inspired game built with C# and WPF — except instead of a 
 
 ## 🎮 Demo
 
-![Delivery Loco Gameplay](delivery-loco.gif)
+![Delivery Loco Gameplay](Flappygame/delivery-loco.gif)
 
-[▶ Watch the full MP4 demo](delivery-loco.mp4)
+[▶ Watch the full MP4 demo](Flappygame/delivery-loco.mp4)
 
 ## 🕹️ Controls
 
