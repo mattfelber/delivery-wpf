@@ -56,5 +56,4 @@ I customized the visuals, gameplay elements, collision behavior, audio, and over
 ## 🚧 Current Status
 
 Playable prototype.
-
 More improvements and polish may be added as I continue learning C# and WPF.
