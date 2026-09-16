@@ -1,6 +1,6 @@
 ﻿# 🛵 Delivery Loco
 
-A small Flappy Bird-inspired game built with C# and WPF — except instead of a bird, you're a Brazilian delivery rider trying to survive the streets and dodge speed cameras. 🇧🇷
+A small Flappy Bird-inspired game built with C# and WPF — except instead of a bird, you're a delivery rider trying to survive the obstacles and dodge speed cameras.
 
 ## 🎮 Demo
 
